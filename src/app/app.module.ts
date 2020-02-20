@@ -26,7 +26,8 @@ import { TypingAreaComponent } from './components/typing-area/typing-area/typing
     AppRoutingModule,
     NgxsModule.forRoot([...stateList]),
     NgxsWebsocketPluginModule.forRoot({
-      url: 'ws://localhost:8080'
+      url: 'ws://aqueous-plains-03415.herokuapp.com:8080'
+      // url: 'ws://localhost:8080'
     }),
     NgxsRouterPluginModule.forRoot(),
     NgxsReduxDevtoolsPluginModule.forRoot()
