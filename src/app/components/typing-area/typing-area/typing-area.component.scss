@@ -1,0 +1,42 @@
+.typing-area {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: flex-start;
+  padding: 0 40px;
+  .head {
+    margin-right: 10px;
+  }
+  div {
+    width: 100%;
+    text-align: left;
+    + div {
+      margin-top: 10px;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    resize: none;
+    margin-top: 8px;
+  }
+  input {
+    width: 200px;
+    height: 20px;
+  }
+  textarea, input {
+    border: solid 1px rgb(81, 162, 199);
+  }
+  button {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(17, 120, 255);
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #88885985;
+    align-self: flex-end;
+    font-size: 13px;
+  }
+}

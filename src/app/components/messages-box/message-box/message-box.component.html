@@ -1,0 +1,6 @@
+<div class="message-box">
+  <div *ngFor="let message of (messages$ | async)?.reverse()" class="message">
+    <span class="name">{{message.from}} :</span>
+    <span class="content">{{message.message}}</span>
+  </div>
+</div>
