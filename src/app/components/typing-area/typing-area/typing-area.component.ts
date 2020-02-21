@@ -24,7 +24,7 @@ export class TypingAreaComponent implements OnInit {
       return;
     }
     this.sendMessage(this.form.value.name, this.form.value.message);
-    this.form.reset();
+    this.form.get('message').reset();
   }
   sendMessage(from: string, message: string) {
     const event = new SendWebSocketMessage({
