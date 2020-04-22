@@ -1,3 +1,3 @@
-import { MessagesState } from './message.states';
+import { MessagesState } from "./message.states";
 
 export const stateList = [MessagesState];

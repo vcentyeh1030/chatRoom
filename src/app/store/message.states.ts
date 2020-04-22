@@ -1,5 +1,5 @@
-import { State, Action, StateContext } from '@ngxs/store';
-import { AddMessage } from './message.actions';
+import { State, Action, StateContext } from "@ngxs/store";
+import { AddMessage } from "./message.actions";
 
 export interface Message {
   from: string;
@@ -7,8 +7,8 @@ export interface Message {
 }
 
 @State<Message[]>({
-  name: 'message',
-  defaults: []
+  name: "message",
+  defaults: [],
 })
 export class MessagesState {
   @Action(AddMessage)
